@@ -7,6 +7,8 @@
         $file_name = explode("/", $img_address);
         $file_name = end($file_name);
 
+        echo "Downloading => " . $file_name . "\n";
+
         $fileContents = file_get_contents($img_address);
 
         if ($fileContents !== false) {
