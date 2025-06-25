@@ -12,7 +12,7 @@ async function downloadFlags() {
         }
 
         for (const country of countries) {
-            const imgAddress = country.flags.svg;
+            const imgAddress = country.flags.png;
             const fileName = imgAddress.split('/').pop();
             const filePath = path.join('./Pic', fileName);
 
